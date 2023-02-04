@@ -7,7 +7,8 @@ public class Lever : MonoBehaviour
     // Item you want to dissapear
     public GameObject blockade;
     public bool isPlayerByLever;
-
+    public GameObject onSwitch;
+    public GameObject offSwitch;
 
     void OnTriggerStay2D(Collider2D obj){
         // Checks if player is standing inside the lever box collider
@@ -19,6 +20,8 @@ public class Lever : MonoBehaviour
 
             if (Input.GetKey(KeyCode.E)){
                 blockade.SetActive(false);
+                onSwitch.SetActive(false);
+                offSwitch.SetActive(true);
             }
         }
     } 

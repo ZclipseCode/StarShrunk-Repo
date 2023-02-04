@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D body;
     bool isGrounded;
     float horizontal;
+    public float floatTime;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
         {
             body.drag = 1f;
 
+            floatTime = 0;
+
             float distance = Mathf.Abs(obj.GetComponent<GravityPoint>().planetRadius - Vector2.Distance(transform.position, obj.transform.position));
             if (distance < 1f)
             {
@@ -56,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
         if (obj.CompareTag("Planet"))
         {
             body.drag = 0.2f;
+
+            floatTime = Time.deltaTime;
         }
     }
 }
