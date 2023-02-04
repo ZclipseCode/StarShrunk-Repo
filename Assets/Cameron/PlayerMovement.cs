@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        if (isGrounded && Input.GetKeyDown(KeyCode.W))
         {
             body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
         }
