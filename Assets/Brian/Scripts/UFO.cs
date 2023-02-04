@@ -8,6 +8,7 @@ public class UFO : MonoBehaviour
     [SerializeField] Transform beamPoint;
     [SerializeField] float timeBetweenShots;
     float timer;
+    [SerializeField] float beamSpeed;
 
     void Start()
     {
@@ -28,6 +29,8 @@ public class UFO : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(beam, beamPoint.position, beam.transform.rotation);
+        GameObject newBeam = Instantiate(beam, beamPoint.position, Quaternion.identity );
+        newBeam.GetComponent<Transform>().rotation = transform.rotation;
+        newBeam.GetComponent<Rigidbody2D>().velocity = -transform.up * beamSpeed;
     }
 }

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7047192971991419836}
   - component: {fileID: 7047192971991419837}
   - component: {fileID: 7047192971991419713}
+  - component: {fileID: 1859603104}
+  - component: {fileID: 1859603110}
   m_Layer: 0
   m_Name: Player v2
   m_TagString: Player
@@ -123,6 +125,10 @@ MonoBehaviour:
   moveSpeed: 10
   jumpPower: 10
   sprite: {fileID: 7047192971991419715}
+  floatTime: 0
+  isCharacterOnPlanet: 0
+  playerTransform: {fileID: 0}
+  respawnCoordinates: {x: 0, y: 0}
 --- !u!70 &7047192971991419713
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +145,30 @@ CapsuleCollider2D:
   m_Offset: {x: -0.036029816, y: -0.036029816}
   m_Size: {x: 6.6926575, y: 7.052946}
   m_Direction: 0
+--- !u!114 &1859603104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7047192971991419838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f9fa74fe268214ca55d1cb8003a381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 5
+  kbTime: 0.01
+--- !u!114 &1859603110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7047192971991419838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8154e5cee93ebef40b32394870f500bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
