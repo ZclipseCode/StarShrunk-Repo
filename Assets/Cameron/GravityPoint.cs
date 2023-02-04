@@ -32,7 +32,7 @@ public class GravityPoint : MonoBehaviour
         Vector3 dir = (transform.position - obj.transform.position) * gravitationalPower;
         obj.GetComponent<Rigidbody2D>().AddForce(dir);
 
-        if (obj.CompareTag("Player"))
+        if (obj.CompareTag("Player") || obj.CompareTag("Enemy"))
         {
             obj.transform.up = Vector3.MoveTowards(obj.transform.up, -dir, gravitationalPower * Time.deltaTime * 5f);
         }
