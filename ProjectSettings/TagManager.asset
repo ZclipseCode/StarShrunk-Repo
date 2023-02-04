@@ -7,6 +7,7 @@ TagManager:
   - Planet
   - Enemy
   - Surface
+  - Swimable
   layers:
   - Default
   - TransparentFX
