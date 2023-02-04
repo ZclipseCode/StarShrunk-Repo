@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RootRoom : MonoBehaviour{
-    public GameObject player, openState, closedState;
-    public bool hasKey = true, isClosed = true, isPlayerNearRoom;
-    void Start(){
-        
-    }
+    public GameObject player, openState, closedState, keyUIObj;
+    public bool hasKey = false, isClosed = true, isPlayerNearRoom;
     void Update(){
         if(isPlayerNearRoom && Input.GetKeyDown(KeyCode.E)) {
             if (isClosed && hasKey){
