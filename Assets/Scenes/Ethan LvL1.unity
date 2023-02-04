@@ -2028,10 +2028,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5900028353dbc72498cd16231757e3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7.5
   jumpPower: 10
   sprite: {fileID: 7047192972708496411}
   floatTime: 0
+  isCharacterOnPlanet: 0
+  playerTransform: {fileID: 7047192972708496410}
+  respawnCoordinates: {x: 0.02, y: 4.76}
 --- !u!1 &7047192972708496614
 GameObject:
   m_ObjectHideFlags: 0

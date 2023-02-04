@@ -11,6 +11,11 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     float horizontal;
     public float floatTime;
+    public bool isCharacterOnPlanet;
+
+    public Transform playerTransform;
+
+    public Vector2 respawnCoordinates;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +41,28 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(transform.right * horizontal * moveSpeed);
         }
         sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
+
+        if (isCharacterOnPlanet)
+        {
+            floatTime = 0;
+        }
+        else if (!isCharacterOnPlanet)
+        {
+            floatTime += Time.deltaTime;
+        }
+        else
+        {
+
+        }
+
+
+
+        if(floatTime > 2)
+        {
+            body.velocity = new Vector2 (0, 0);
+
+            playerTransform.position = respawnCoordinates;
+        }
     }
 
     void OnTriggerStay2D(Collider2D obj)
@@ -44,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         {
             body.drag = 1f;
 
-            floatTime = 0;
+            isCharacterOnPlanet = true;
 
             float distance = Mathf.Abs(obj.GetComponent<GravityPoint>().planetRadius - Vector2.Distance(transform.position, obj.transform.position));
             if (distance < 1f)
@@ -60,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
         {
             body.drag = 0.2f;
 
-            floatTime = Time.deltaTime;
+            isCharacterOnPlanet = false;
         }
     }
 }
