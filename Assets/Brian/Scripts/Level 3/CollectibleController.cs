@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CollectibleController : MonoBehaviour
 {
     int totalCollectibles;
     [SerializeField] int targetCollectibles;
-    [SerializeField] string bossSceneName;
+    [SerializeField] GameObject goal;
 
     void Start()
     {
@@ -18,7 +17,7 @@ public class CollectibleController : MonoBehaviour
     {
         if (totalCollectibles == targetCollectibles)
         {
-            SceneManager.LoadScene(bossSceneName);
+            goal.SetActive(true);
         }
     }
 
