@@ -146,6 +146,7 @@ public class waterMovement : MonoBehaviour
             dashCooldown = 0;
             dashAvailable = false;
             PufferfishEnemy.isDashing = true;
+            EyeKill.isDasing = true;
 
             animator.SetBool("isDashing", true);
         }
@@ -164,6 +165,7 @@ public class waterMovement : MonoBehaviour
         {
             spikeHitBox.SetActive(false);
             PufferfishEnemy.isDashing = false;
+            EyeKill.isDasing = false;
             animator.SetBool("isDashing", false);
         }
 
