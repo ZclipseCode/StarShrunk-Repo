@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3b093646fab7964ca95ab2edb525983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCollectibles: 3
-  goal: {fileID: 0}
+  targetCollectibles: 5
+  bossScene: Logan Boss Stage 1
