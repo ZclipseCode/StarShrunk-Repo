@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClamShot : MonoBehaviour
+public class VirusShot : MonoBehaviour
 {
     void Start()
     {
