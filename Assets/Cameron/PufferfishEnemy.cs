@@ -14,6 +14,10 @@ public class PufferfishEnemy : MonoBehaviour
 
     public float turnSpeed = 200f;
 
+    public float isBigEnemy = 0;
+
+    public GameObject keyImage;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -64,7 +68,11 @@ public class PufferfishEnemy : MonoBehaviour
         {
             if (pufferTimer < 2.1667)
             {
-                
+                if(isBigEnemy == 1)
+                {
+                    keyImage.SetActive(true);
+                }
+
                 Destroy(gameObject);
             }
             else if (pufferTimer > 2.1667 && pufferTimer < 3)
