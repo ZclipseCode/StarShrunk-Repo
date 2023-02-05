@@ -13,6 +13,7 @@ TagManager:
   - Closed RR
   - Open RR
   - Big Enemy
+  - Tongue
   layers:
   - Default
   - TransparentFX

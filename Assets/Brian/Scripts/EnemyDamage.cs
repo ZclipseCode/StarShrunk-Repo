@@ -24,4 +24,14 @@ public class EnemyDamage : MonoBehaviour
             ph.TakeDamage(damage);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //Debug.Log("Enter Trigger");
+
+        if (other.gameObject.tag == "Tongue")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
