@@ -17,6 +17,12 @@ public class NPCTextLvl1 : MonoBehaviour{
     private void Update(){
         if (!isPlayerByNPC) {
             text1.SetActive(false);
+            text2.SetActive(false);
+            text3.SetActive(false);
+            text4.SetActive(false);
+            completeText1.SetActive(false);
+            completeText2.SetActive(false);
+            d1 = false; d2 = false; d3 = false;
         }
         else if (isPlayerByNPC && !d1) {
             text1.SetActive(true);

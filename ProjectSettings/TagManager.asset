@@ -12,6 +12,7 @@ TagManager:
   - JumpPad
   - Closed RR
   - Open RR
+  - Big Enemy
   layers:
   - Default
   - TransparentFX

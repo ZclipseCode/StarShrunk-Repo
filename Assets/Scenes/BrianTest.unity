@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UFO
       objectReference: {fileID: 0}
+    - target: {fileID: 3277895807223141760, guid: 74809b511744eb442985c6395a53a2e6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3277895807223141762, guid: 74809b511744eb442985c6395a53a2e6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -452,7 +456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &813661514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -991,6 +995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterBear
       objectReference: {fileID: 0}
+    - target: {fileID: 7490440106896652504, guid: c857896a819129b41ab6dc0aa3be5aaa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8591595144508252347, guid: c857896a819129b41ab6dc0aa3be5aaa, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1047,6 +1055,10 @@ PrefabInstance:
     - target: {fileID: 7093977294935045484, guid: b74a04b3b418fa347948658611562ea0, type: 3}
       propertyPath: m_Name
       value: Virus_turret_split
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093977294935045484, guid: b74a04b3b418fa347948658611562ea0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8267138969498643727, guid: b74a04b3b418fa347948658611562ea0, type: 3}
       propertyPath: m_RootOrder
