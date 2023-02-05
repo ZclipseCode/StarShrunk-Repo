@@ -9,6 +9,7 @@ public class lvl3Attack : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             Destroy(collision.gameObject);
+            Debug.Log("Die");
         }
     }
 }

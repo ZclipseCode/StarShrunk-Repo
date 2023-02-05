@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isAttacking", false);
         }
 
-        if(attackTime > .73333)
+        if(attackTime > .93333)
         {
             tounge.SetActive(true);
         }
