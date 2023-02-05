@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1564932672769777140
+--- !u!1 &3789481832446431878
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1564932672769777142}
-  - component: {fileID: 1564932672769777143}
-  - component: {fileID: 1564932672769777145}
+  - component: {fileID: 3789481832446431876}
+  - component: {fileID: 3789481832446431877}
+  - component: {fileID: 2387242463407132528}
   m_Layer: 0
   m_Name: Music Player
   m_TagString: Untagged
@@ -18,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1564932672769777142
+--- !u!4 &3789481832446431876
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564932672769777140}
+  m_GameObject: {fileID: 3789481832446431878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,19 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1564932672769777143
+--- !u!82 &3789481832446431877
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564932672769777140}
+  m_GameObject: {fileID: 3789481832446431878}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -129,15 +129,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1564932672769777145
+--- !u!114 &2387242463407132528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564932672769777140}
+  m_GameObject: {fileID: 3789481832446431878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ba4d26dd9c197041ae46a2d9b8bade6, type: 3}
+  m_Script: {fileID: 11500000, guid: 835042bf8cbf0e542a568995e58a1115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Title Screen
+  lvl1: Ethan LvL1
+  lvl2: Cam LVL2
+  lvl3: Ethan LvL3
+  boss: Logan Boss Stage 1
+  win: Win Scene
+  titleAC: {fileID: 8300000, guid: c235a9b16d62a0546a59322ff1157e69, type: 3}
+  lvl1AC: {fileID: 8300000, guid: ce79b18d100e0524c87ca4c013eb2b36, type: 3}
+  lvl2AC: {fileID: 8300000, guid: ce2d5c66136c8e84197bbc9507e97a51, type: 3}
+  lvl3AC: {fileID: 8300000, guid: 57273a70818d6d7478fdd3c8a7f0a5d3, type: 3}
+  bossAC: {fileID: 8300000, guid: dd533b87a51fa434a93443c26c422643, type: 3}
+  winAC: {fileID: 8300000, guid: ce79b18d100e0524c87ca4c013eb2b36, type: 3}
