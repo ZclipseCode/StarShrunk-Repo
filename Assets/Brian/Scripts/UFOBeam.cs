@@ -6,13 +6,10 @@ public class UFOBeam : MonoBehaviour
 {
     [SerializeField] float lifespan;
     float timer;
-    //[SerializeField] float speed;
-    //Rigidbody2D rb;
 
     void Start()
     {
-        //rb = GetComponent<Rigidbody2D>();
-        //rb.velocity = -transform.up * speed;
+
     }
 
     void Update()
