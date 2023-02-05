@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: 2b32f22c4f86f1042a34136b31f8c909
+  - enabled: 1
+    path: Assets/Scenes/Logan Tutorial.unity
+    guid: c41acee21eca5e64f975ea834b1713d2
+  - enabled: 1
+    path: Assets/Scenes/Ethan LvL1.unity
+    guid: b186d94c59e3ba84ea0e5b97cbded98e
+  - enabled: 1
+    path: Assets/Scenes/Ethan LvL3.unity
+    guid: 26bf5df73aa15b84d92a739bd81c045a
+  - enabled: 0
+    path: Assets/Scenes/Cameron Test Scene.unity
+    guid: 15a534f92929b4d44b16d7794e1dcc02
+  - enabled: 1
+    path: Assets/Scenes/Cam LVL2.unity
+    guid: b2f57cb629682de4785a2fe0aa3e119d
   m_configObjects: {}
