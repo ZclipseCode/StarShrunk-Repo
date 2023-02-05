@@ -20,7 +20,7 @@ public class JumpPad : MonoBehaviour{
     }
 
     private void OnTriggerStay2D(Collider2D obj){
-        if(obj.tag == "Player" && input){
+        if(obj.CompareTag("Player") && input){
             player.AddForce(transform.up * jumpPadPower, ForceMode2D.Impulse);
         }
     }
