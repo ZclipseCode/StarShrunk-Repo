@@ -6,12 +6,19 @@ public class LvL3Movement : MonoBehaviour
 {
     public float moveSpeed=10f;
     public SpriteRenderer sprite;
+    public Animator animator;
 
     Rigidbody2D body;
     bool isGrounded;
     float horizontal;
     public float floatTime;
     public bool isCharacterOnPlanet;
+
+    public GameObject hitBox;
+
+    public bool attackAvailable = true;
+
+    public float attackTime = 0;
 
     public Transform playerTransform;
 
@@ -21,12 +28,41 @@ public class LvL3Movement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.Space) && attackAvailable)
+        {
+            animator.SetBool("isAttacking", true);
+            attackAvailable = false;
+            Debug.Log("player attacked");
+            attackTime = 0;
+        }
+
+        if (attackTime > 2)
+        {
+            attackAvailable = true;
+        }
+
+        if (attackTime > 1.5)
+        {
+            animator.SetBool("isAttacking", false);
+        }
+
+        if (attackTime > .73333)
+        {
+            hitBox.SetActive(true);
+        }
+
+        if (attackTime > 1.4)
+        {
+            hitBox.SetActive(false);
+        }
     }
 
     void FixedUpdate()
@@ -55,6 +91,11 @@ public class LvL3Movement : MonoBehaviour
         if(floatTime > 2)
         {
             ResetPlayer();
+        }
+
+        if (!attackAvailable)
+        {
+            attackTime += Time.deltaTime;
         }
     }
 
