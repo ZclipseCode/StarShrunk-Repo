@@ -5882,9 +5882,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!1 &7047192972708496614 stripped
-=======
 --- !u!70 &7047192972708496409
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6014,7 +6011,6 @@ MonoBehaviour:
   tounge: {fileID: 1728025853}
   toungeSprite: {fileID: 1728025855}
 --- !u!1 &7047192972708496614
->>>>>>> a2ea0bd63e98760fda36cfda9148d19acfaa6f8a
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8384843338225147246, guid: 96b7ff45cce180244a5d5142420cd2c5, type: 3}
   m_PrefabInstance: {fileID: 1553841088037296520}
