@@ -3999,7 +3999,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9cb219abad26fe14fb64e418f1dd5fde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5845,8 +5845,8 @@ MonoBehaviour:
   respawnCoordinates: {x: 0.02, y: 4.76}
   attackTime: 0
   attackAvailable: 1
-  tounge: {fileID: 0}
-  toungeSprite: {fileID: 0}
+  tounge: {fileID: 1728025853}
+  toungeSprite: {fileID: 1728025855}
 --- !u!1 &7047192972708496614
 GameObject:
   m_ObjectHideFlags: 0
