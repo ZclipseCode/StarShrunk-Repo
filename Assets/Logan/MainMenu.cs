@@ -18,4 +18,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Logan Tutorial");
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
