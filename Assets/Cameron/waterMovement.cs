@@ -18,6 +18,10 @@ public class waterMovement : MonoBehaviour
 
     public GameObject spikeHitBox;
 
+    public float floatTime;
+    public Transform playerTransform;
+    public Vector2 respawnCoordinates;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -56,6 +60,7 @@ public class waterMovement : MonoBehaviour
         if (obj.CompareTag("Swimable"))
         {
             inCircle = true;
+            floatTime = 0;
         }
     }
 
@@ -64,6 +69,7 @@ public class waterMovement : MonoBehaviour
         if (obj.CompareTag("Swimable"))
         {
             inCircle = true;
+            floatTime = 0;
         }
     }
 
@@ -108,6 +114,18 @@ public class waterMovement : MonoBehaviour
         {
             spikeHitBox.SetActive(false);
             PufferfishEnemy.isDashing = false;
+        }
+
+        if (!inCircle)
+        {
+            floatTime += Time.deltaTime;
+        }
+
+        if (floatTime > 2)
+        {
+            _rigidbody.velocity = new Vector2(0, 0);
+
+            playerTransform.position = respawnCoordinates;
         }
     }
 }
