@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class waterMovement : MonoBehaviour
 {
@@ -18,13 +19,27 @@ public class waterMovement : MonoBehaviour
 
     public GameObject spikeHitBox;
 
-    // Start is called before the first frame update
+    public float floatTime;
+    public Transform playerTransform;
+    public Vector2 respawnCoordinates;
+
+    public GameObject RRClosed;
+    public GameObject RROpen;
+    public GameObject keyImage;
+    public bool playerOnClossedRR = false;
+    public bool playerOnOpenRR = false;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    private void Start()
+    {
+        RRClosed.SetActive(true);
+        
+    }
+
     private void Update()
     {
         _thrusting = Input.GetKey(KeyCode.W);
@@ -40,7 +55,21 @@ public class waterMovement : MonoBehaviour
         else
         {
             _turnDirection = 0f;
-        }   
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (playerOnClossedRR && keyImage.activeInHierarchy)
+            {
+                RRClosed.SetActive(false);
+                RROpen.SetActive(true);
+            }
+
+            if (playerOnOpenRR)
+            {
+                SceneManager.LoadScene("Ethan LvL3");
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D obj)
@@ -49,6 +78,16 @@ public class waterMovement : MonoBehaviour
         {
             inCircle = false;
         }
+
+        if (obj.CompareTag("Closed RR"))
+        {
+            playerOnClossedRR = false;
+        }
+
+        if (obj.CompareTag("Open RR"))
+        {
+            playerOnOpenRR = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D obj)
@@ -56,6 +95,7 @@ public class waterMovement : MonoBehaviour
         if (obj.CompareTag("Swimable"))
         {
             inCircle = true;
+            floatTime = 0;
         }
     }
 
@@ -64,6 +104,17 @@ public class waterMovement : MonoBehaviour
         if (obj.CompareTag("Swimable"))
         {
             inCircle = true;
+            floatTime = 0;
+        }
+
+        if (obj.CompareTag("Closed RR"))
+        {
+            playerOnClossedRR = true;
+        }
+
+        if (obj.CompareTag("Open RR"))
+        {
+            playerOnOpenRR = true;
         }
     }
 
@@ -108,6 +159,18 @@ public class waterMovement : MonoBehaviour
         {
             spikeHitBox.SetActive(false);
             PufferfishEnemy.isDashing = false;
+        }
+
+        if (!inCircle)
+        {
+            floatTime += Time.deltaTime;
+        }
+
+        if (floatTime > 2)
+        {
+            _rigidbody.velocity = new Vector2(0, 0);
+
+            playerTransform.position = respawnCoordinates;
         }
     }
 }
