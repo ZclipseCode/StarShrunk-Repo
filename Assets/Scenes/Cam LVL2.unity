@@ -5793,6 +5793,10 @@ PrefabInstance:
       propertyPath: keyImage
       value: 
       objectReference: {fileID: 847132321}
+    - target: {fileID: 5089364011023625954, guid: 430090688d0bfa2478dbb428a89e0cb9, type: 3}
+      propertyPath: turnSpeed
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 5089364011023625957, guid: 430090688d0bfa2478dbb428a89e0cb9, type: 3}
       propertyPath: healthBar
       value: 

@@ -5377,6 +5377,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1321564134448773085}
+    - target: {fileID: 8384843338225147245, guid: 96b7ff45cce180244a5d5142420cd2c5, type: 3}
+      propertyPath: jumpPower
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384843338225147245, guid: 96b7ff45cce180244a5d5142420cd2c5, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8384843338225147246, guid: 96b7ff45cce180244a5d5142420cd2c5, type: 3}
       propertyPath: m_Name
       value: Player v2
