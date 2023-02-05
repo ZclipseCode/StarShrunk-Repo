@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Ethan LvL1");
+        SceneManager.LoadScene("Logan Intro");
     }
     public void Exit()
     {
