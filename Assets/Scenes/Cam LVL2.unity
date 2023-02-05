@@ -1187,6 +1187,8 @@ GameObject:
   - component: {fileID: 1020972517}
   - component: {fileID: 1020972516}
   - component: {fileID: 1020972518}
+  - component: {fileID: 1020972519}
+  - component: {fileID: 1020972520}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1350,6 +1352,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71937fb648a78034ab0b6174c771c0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1020972519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020972511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8154e5cee93ebef40b32394870f500bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+--- !u!114 &1020972520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020972511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f9fa74fe268214ca55d1cb8003a381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 15
+  kbTime: 0.01
 --- !u!1 &1117353680
 GameObject:
   m_ObjectHideFlags: 3
@@ -2000,7 +2029,7 @@ GameObject:
   - component: {fileID: 1887192432}
   m_Layer: 0
   m_Name: Pufferfish
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2105,6 +2134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pufferTimer: 0
+  damage: 1
 --- !u!58 &1887192432
 CircleCollider2D:
   m_ObjectHideFlags: 0
