@@ -10161,6 +10161,7 @@ GameObject:
   - component: {fileID: 7047192972123481828}
   - component: {fileID: 7047192972123481625}
   - component: {fileID: 1462000371}
+  - component: {fileID: 7047192972123481831}
   m_Layer: 6
   m_Name: PlayerLvl3
   m_TagString: Player
@@ -10168,6 +10169,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7047192972123481831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7047192972123481830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71937fb648a78034ab0b6174c771c0dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8180414473665866587
 GameObject:
   m_ObjectHideFlags: 0
@@ -10728,7 +10741,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: 5d07f953cc0bca94fbbf274d3d6e8d03, type: 3}
-  m_Color: {r: 0.6415094, g: 0.058502365, b: 0.058502365, a: 1}
+  m_Color: {r: 0.6415094, g: 0.058502365, b: 0.058502365, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10770,7 +10783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &8180414474005024112
 SpriteRenderer:
   m_ObjectHideFlags: 0
