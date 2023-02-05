@@ -165,7 +165,7 @@ public class waterMovement : MonoBehaviour
         {
             spikeHitBox.SetActive(false);
             PufferfishEnemy.isDashing = false;
-            EyeKill.isDasing = false;
+            EyeKill.isDashing = false;
             animator.SetBool("isDashing", false);
         }
 
