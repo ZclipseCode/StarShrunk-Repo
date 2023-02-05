@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 48366c577b20aca4e964d3a572b7f709
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Bubble
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 841
+      y: 4
+      width: 103
+      height: 103
+    spriteID: 752cdee9b82d22a4f963d328d4c4f846
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 635, y: -292}
+  - name: Character Holder
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 240
+      width: 219
+      height: 219
+    spriteID: 0a8b32076837c2148bff9751a00c16a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -60, y: 28}
+  - name: Ability Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 240
+      width: 408
+      height: 79
+    spriteID: c5b00ecb876457240a163513ddca1909
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -26, y: -71}
+  - name: Ability Fill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 327
+      width: 388
+      height: 59
+    spriteID: c06489e28a4fb5a47ab7630a662b63a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -36, y: 6}
+  - name: Health Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 829
+      height: 120
+    spriteID: 229b82b9ba9e6b744b4aac5ed794677c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -160, y: -207}
+  - name: Health Fill
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 132
+      width: 809
+      height: 100
+    spriteID: 670ed601f217327489a27a1eea6f32cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -170, y: -89}
+  - name: Bubble
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 821
+      y: 132
+      width: 71
+      height: 73
+    spriteID: 62e49d48df01a924ab1150c6fe53411c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 185, y: -170}
+  - name: Bubble
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 900
+      y: 132
+      width: 71
+      height: 73
+    spriteID: ffba4a4ac8d93494fa43b03310a2c174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 280, y: -196}
+  - name: Bubble
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 394
+      width: 103
+      height: 103
+    spriteID: cb9946a85b1290242a8c1303db56227d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -626, y: 139}
+  - name: Bubble
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 342
+      y: 394
+      width: 103
+      height: 103
+    spriteID: 36903ba2caf7e164ca7275eaa2103ccc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -574, y: 133}
+  - name: Bubble
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 453
+      y: 394
+      width: 103
+      height: 103
+    spriteID: cc5647ef86cb1e54c95a549af1a776e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 421, y: 142}
+  - name: Bubble
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 564
+      y: 394
+      width: 103
+      height: 103
+    spriteID: 3b91d8020d3328143a186f58b7d1dd04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 500, y: 183}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Bubble
+    spriteName: Bubble
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 752cdee9b82d22a4f963d328d4c4f846
+    layerID: 13
+    mosaicPosition: {x: 841, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Character Holder
+    spriteName: Character Holder
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a8b32076837c2148bff9751a00c16a6
+    layerID: 8
+    mosaicPosition: {x: 4, y: 240}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ability Bar
+    spriteName: Ability Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5b00ecb876457240a163513ddca1909
+    layerID: 19
+    mosaicPosition: {x: 231, y: 240}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Ability Fill
+    spriteName: Ability Fill
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c06489e28a4fb5a47ab7630a662b63a3
+    layerID: 21
+    mosaicPosition: {x: 231, y: 327}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Health Bar
+    spriteName: Health Bar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 229b82b9ba9e6b744b4aac5ed794677c
+    layerID: 10
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Health Fill
+    spriteName: Health Fill
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 670ed601f217327489a27a1eea6f32cf
+    layerID: 12
+    mosaicPosition: {x: 4, y: 132}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bubble
+    spriteName: Bubble
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 62e49d48df01a924ab1150c6fe53411c
+    layerID: 25
+    mosaicPosition: {x: 821, y: 132}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bubble
+    spriteName: Bubble
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffba4a4ac8d93494fa43b03310a2c174
+    layerID: 24
+    mosaicPosition: {x: 900, y: 132}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bubble
+    spriteName: Bubble
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cb9946a85b1290242a8c1303db56227d
+    layerID: 23
+    mosaicPosition: {x: 231, y: 394}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bubble
+    spriteName: Bubble
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 36903ba2caf7e164ca7275eaa2103ccc
+    layerID: 22
+    mosaicPosition: {x: 342, y: 394}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bubble
+    spriteName: Bubble
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cc5647ef86cb1e54c95a549af1a776e9
+    layerID: 15
+    mosaicPosition: {x: 453, y: 394}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bubble
+    spriteName: Bubble
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3b91d8020d3328143a186f58b7d1dd04
+    layerID: 14
+    mosaicPosition: {x: 564, y: 394}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
