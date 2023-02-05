@@ -15,7 +15,7 @@ public class VirusShot : MonoBehaviour
 
     void Start()
     {
-        
+        timer = timeBetweenShots;
     }
 
     void Update()
