@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cam LVL2.unity
     guid: b2f57cb629682de4785a2fe0aa3e119d
   - enabled: 1
-    path: Assets/Cameron/Secret Scene.unity
+    path: Assets/Cameron/[REDACTED]/Secret Scene.unity
     guid: 933b02c4cded01c48b4124d8ddfe3137
   m_configObjects: {}
