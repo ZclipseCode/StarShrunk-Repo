@@ -7,7 +7,7 @@ public class ScreenShake : MonoBehaviour
     [SerializeField]
     private float duration = 1f;
     public AnimationCurve curve;
-    public bool start = false;
+    public static bool start = false;
 
     void Update()
     {
