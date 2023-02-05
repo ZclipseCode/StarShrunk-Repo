@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static int tentKilled = 0, eyeKilled = 0;
+    public static int tentKilled = 0, eyeKilled = 0, lumpEaten = 0;
     private void Start() {
         tentKilled = 0;
         eyeKilled = 0;
+        lumpEaten = 0;
     }
 
     private void Update()
@@ -23,6 +24,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("load next");
             eyeKilled = 0;
             SceneManager.LoadScene("Ethan Boss Stage 3");
+        }
+        if(lumpEaten >= 4) {
+            lumpEaten = 0;
+            SceneManager.LoadScene("Win Scene");
         }
     }
 }
