@@ -274,7 +274,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96096304}
-  m_Text: Of you imagination
+  m_Text: What even are you.
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -985,7 +985,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525048786}
-  m_Text: A world
+  m_Text: 'Hmm...
+
+    Haven''t see you here before.'
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -3076,7 +3078,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397768302}
-  m_Text: And you will see
+  m_Text: Can you help me find my cat?
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -3412,7 +3414,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504878915}
-  m_Text: Here's a key I found.
+  m_Text: 'Here''s a key I found.
+
+    Maybe it will help you.'
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
