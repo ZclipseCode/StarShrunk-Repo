@@ -285,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 4998463543781357120, guid: 4993b8046fdef6f469e3a8d4bdc6dbe9, type: 3}
     - target: {fileID: 4137956730949555286, guid: a3631882cab421c46ac5e5372afa2ec8, type: 3}
       propertyPath: bulletSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4137956730949555286, guid: a3631882cab421c46ac5e5372afa2ec8, type: 3}
       propertyPath: timeBetweenShots
@@ -590,7 +590,7 @@ PrefabInstance:
       objectReference: {fileID: 4998463543781357120, guid: 4993b8046fdef6f469e3a8d4bdc6dbe9, type: 3}
     - target: {fileID: 4137956730949555286, guid: a3631882cab421c46ac5e5372afa2ec8, type: 3}
       propertyPath: bulletSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4137956730949555286, guid: a3631882cab421c46ac5e5372afa2ec8, type: 3}
       propertyPath: timeBetweenShots
@@ -1782,7 +1782,7 @@ PrefabInstance:
       objectReference: {fileID: 4998463543781357120, guid: 4993b8046fdef6f469e3a8d4bdc6dbe9, type: 3}
     - target: {fileID: 4137956730949555286, guid: a3631882cab421c46ac5e5372afa2ec8, type: 3}
       propertyPath: bulletSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4137956730949555286, guid: a3631882cab421c46ac5e5372afa2ec8, type: 3}
       propertyPath: timeBetweenShots
