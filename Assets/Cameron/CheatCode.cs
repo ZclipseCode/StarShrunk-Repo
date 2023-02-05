@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheatCode : MonoBehaviour
 {
@@ -97,7 +98,7 @@ public class CheatCode : MonoBehaviour
 
         if (typedN)
         {
-            Debug.Log("I love Brian");
+            SceneManager.LoadScene("Secret Scene");
             typedB = false;
             typedR = false;
             typedI = false;

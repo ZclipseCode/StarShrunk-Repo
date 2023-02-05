@@ -10,6 +10,15 @@ public class PufferfishEnemy : MonoBehaviour
 
     [SerializeField] int damage;
 
+    private Rigidbody2D _rigidbody;
+
+    public float turnSpeed = 200f;
+
+    private void Awake()
+    {
+        _rigidbody = GetComponent<Rigidbody2D>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +36,15 @@ public class PufferfishEnemy : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        _rigidbody.AddTorque(turnSpeed);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.tag == "Player")
+        if (!isDashing)
         {
             if (pufferTimer < 2.1667)
             {
