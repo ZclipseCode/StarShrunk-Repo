@@ -16,6 +16,8 @@ public class waterMovement : MonoBehaviour
     private bool _thrusting;
     private float _turnDirection;
 
+    public GameObject spikeHitBox;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -85,9 +87,11 @@ public class waterMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && dashAvailable)
         {
             //Debug.Log("pressed space");
+            spikeHitBox.SetActive(true);
             _rigidbody.AddForce(this.transform.right * dashSpeed);
             dashCooldown = 0;
             dashAvailable = false;
+            PufferfishEnemy.isDashing = true;
         }
 
         if (!dashAvailable)
@@ -98,6 +102,12 @@ public class waterMovement : MonoBehaviour
         if (dashCooldown > 1)
         {
             dashAvailable = true;
+        }
+
+        if (dashCooldown > .75)
+        {
+            spikeHitBox.SetActive(false);
+            PufferfishEnemy.isDashing = false;
         }
     }
 }
