@@ -9,6 +9,9 @@ TagManager:
   - Surface
   - Swimable
   - Spike
+  - JumpPad
+  - Closed RR
+  - Open RR
   layers:
   - Default
   - TransparentFX
