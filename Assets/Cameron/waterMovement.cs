@@ -29,6 +29,8 @@ public class waterMovement : MonoBehaviour
     public bool playerOnClossedRR = false;
     public bool playerOnOpenRR = false;
 
+    Animator animator;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -37,7 +39,8 @@ public class waterMovement : MonoBehaviour
     private void Start()
     {
         RRClosed.SetActive(true);
-        
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -143,6 +146,8 @@ public class waterMovement : MonoBehaviour
             dashCooldown = 0;
             dashAvailable = false;
             PufferfishEnemy.isDashing = true;
+
+            animator.SetBool("isDashing", true);
         }
 
         if (!dashAvailable)
@@ -159,6 +164,7 @@ public class waterMovement : MonoBehaviour
         {
             spikeHitBox.SetActive(false);
             PufferfishEnemy.isDashing = false;
+            animator.SetBool("isDashing", false);
         }
 
         if (!inCircle)
