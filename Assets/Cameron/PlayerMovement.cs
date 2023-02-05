@@ -17,10 +17,18 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 respawnCoordinates;
 
+    Animator animator;
+    public float attackTime = 0;
+    public bool attackAvailable = true;
+    public GameObject tounge;
+    public SpriteRenderer toungeSprite;
+
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,7 +40,38 @@ public class PlayerMovement : MonoBehaviour
         {
             body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Space) && attackAvailable)
+        {
+            animator.SetBool("isAttacking", true);
+            attackAvailable = false;
+            Debug.Log("player attacked");
+            attackTime = 0;
+        }
+
+        if (attackTime > 2)
+        {
+            attackAvailable = true;
+        }
+
+        if(attackTime > 1.5)
+        {
+            animator.SetBool("isAttacking", false);
+        }
+
+        if(attackTime > .73333)
+        {
+            tounge.SetActive(true);
+        }
+
+        if(attackTime > 1.4)
+        {
+            tounge.SetActive(false);
+        }
     }
+
+
 
     void FixedUpdate()
     {
@@ -41,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(transform.right * horizontal * moveSpeed);
         }
         sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
+
+        toungeSprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : toungeSprite.flipX);
 
         if (isCharacterOnPlanet)
         {
@@ -57,7 +98,13 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        if(floatTime > 2)
+        if (!attackAvailable)
+        {
+            attackTime += Time.deltaTime;
+        }
+
+
+        if (floatTime > 2)
         {
             body.velocity = new Vector2 (0, 0);
 
