@@ -22,7 +22,7 @@ public class DM : MonoBehaviour
 
     public void SD(Dialogue dialogue)
     {
-        animator.SetBool("IsOpen", true);
+        animator.SetBool("DialogueBox_Open", true);
 
 
         nameText.text = dialogue.name;
@@ -59,7 +59,7 @@ public class DM : MonoBehaviour
     }
         void EndDialogue()
         {
-        animator.SetBool("IsOpen", false);
+        animator.SetBool("DialogueBox_Open", false);
     }
     
 }
