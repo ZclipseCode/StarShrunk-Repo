@@ -54,9 +54,7 @@ public class LvL3Movement : MonoBehaviour
 
         if(floatTime > 2)
         {
-            body.velocity = new Vector2 (0, 0);
-
-            playerTransform.position = respawnCoordinates;
+            ResetPlayer();
         }
     }
 
@@ -84,5 +82,12 @@ public class LvL3Movement : MonoBehaviour
 
             isCharacterOnPlanet = false;
         }
+    }
+
+    public void ResetPlayer()
+    {
+        body.velocity = new Vector2(0, 0);
+
+        playerTransform.position = respawnCoordinates;
     }
 }

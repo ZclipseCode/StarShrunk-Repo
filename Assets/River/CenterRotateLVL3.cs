@@ -6,6 +6,7 @@ public class CenterRotateLVL3 : MonoBehaviour
 {
     public float rotationFactor;
     private float timer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class CenterRotateLVL3 : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+
         gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotationFactor * timer));
     }
 }
