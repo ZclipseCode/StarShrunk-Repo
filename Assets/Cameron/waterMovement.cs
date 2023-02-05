@@ -146,7 +146,7 @@ public class waterMovement : MonoBehaviour
             dashCooldown = 0;
             dashAvailable = false;
             PufferfishEnemy.isDashing = true;
-            EyeKill.isDasing = true;
+            EyeKill.isDashing = true;
 
             animator.SetBool("isDashing", true);
         }
