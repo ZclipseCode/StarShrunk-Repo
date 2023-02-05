@@ -83,6 +83,16 @@ public class PlayerMovement : MonoBehaviour
 
         toungeSprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : toungeSprite.flipX);
 
+        if (horizontal > 0)
+        {
+            tounge.transform.localPosition = new Vector2(6.31f, .15f);
+        }
+        else if (horizontal < 0)
+        {
+            tounge.transform.localPosition = new Vector2(-6.31f, .15f);
+        }
+
+
         if (isCharacterOnPlanet)
         {
             floatTime = 0;
