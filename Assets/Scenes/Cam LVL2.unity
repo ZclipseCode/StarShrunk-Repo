@@ -2619,7 +2619,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075203121}
-  m_Text: "Kill thine \"big ol' fish\"\n to get thy Key"
+  m_Text: 'Kill thine "big ol'' fish"
+
+    Only you can get thy Key'
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1

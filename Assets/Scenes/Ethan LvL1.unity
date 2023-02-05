@@ -274,7 +274,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96096304}
-  m_Text: What even are you.
+  m_Text: What even are you?
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -986,6 +986,7 @@ TextMesh:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525048786}
   m_Text: 'Hmm...
+
 
     Haven''t see you here before.'
   m_OffsetZ: 0
@@ -5844,7 +5845,8 @@ MonoBehaviour:
   respawnCoordinates: {x: 0.02, y: 4.76}
   attackTime: 0
   attackAvailable: 1
-  tounge: {fileID: 1728025853}
+  tounge: {fileID: 0}
+  toungeSprite: {fileID: 0}
 --- !u!1 &7047192972708496614
 GameObject:
   m_ObjectHideFlags: 0
