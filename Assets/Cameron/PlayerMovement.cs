@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isAttacking", true);
             attackAvailable = false;
-            Debug.Log("player attacked");
+            //Debug.Log("player attacked");
             attackTime = 0;
         }
 
