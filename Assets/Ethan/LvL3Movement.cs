@@ -54,12 +54,12 @@ public class LvL3Movement : MonoBehaviour
             animator.SetBool("isAttacking", false);
         }
 
-        if (attackTime > .73333)
+        if (attackTime > .1)
         {
             hitBox.SetActive(true);
         }
 
-        if (attackTime > 1.4)
+        if (attackTime > 1.5)
         {
             hitBox.SetActive(false);
         }

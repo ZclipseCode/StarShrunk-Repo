@@ -11,5 +11,6 @@ public class lvl3Attack : MonoBehaviour
             Destroy(collision.gameObject);
             Debug.Log("Die");
         }
+        Debug.Log(collision.gameObject.tag);
     }
 }

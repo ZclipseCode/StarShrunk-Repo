@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static int tentKilled = 0, eyeKilled = 0;
+    private void Start() {
+        tentKilled = 0;
+        eyeKilled = 0;
+    }
 
     private void Update()
     {
@@ -13,12 +17,12 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("load next");
             tentKilled = 0;
-            //load next scene
+            SceneManager.LoadScene("Ethan Boss Stage 2");
         }
         if(eyeKilled >= 3) {
             Debug.Log("load next");
             eyeKilled = 0;
-            //load next scene
+            SceneManager.LoadScene("Ethan Boss Stage 3");
         }
     }
 }
