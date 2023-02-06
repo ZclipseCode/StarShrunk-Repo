@@ -27,7 +27,7 @@ public class EnemyDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("Enter Trigger");
+        Debug.Log("Enter Trigger");
 
         if (other.gameObject.tag == "Tongue")
         {

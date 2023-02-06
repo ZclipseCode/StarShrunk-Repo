@@ -887,6 +887,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1553841088662408567, guid: 96b7ff45cce180244a5d5142420cd2c5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4984bb744c16e3d4a9316691504e5dcf, type: 3}
     - target: {fileID: 8384843338225147232, guid: 96b7ff45cce180244a5d5142420cd2c5, type: 3}
       propertyPath: healthBar
       value: 
